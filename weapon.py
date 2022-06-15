@@ -11,4 +11,3 @@ gun = Weapon('glock', 20)
 sword = Weapon('excalibur', 30)
 light_saber = Weapon('light saber', 40)
 
-print(gun.attack_power)

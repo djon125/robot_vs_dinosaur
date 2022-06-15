@@ -10,22 +10,10 @@ class Dinosaur:
 
     
     def dino_attack(self): #dino attack robo
+        print(f'Robot\'s health is: {robot.robot_one.health}')
         robot.robot_one.health = robot.robot_one.health -  dino_one.attack_power
-        print(robot.robot_one.health)
+        print(f'Robot\'s health is: {robot.robot_one.health}')
 
-        
-        
 
-    # def dino_attack(self, hit_robot):
-    #     self.hit_robot = True
         
 dino_one = Dinosaur('dino_one', 20)   
-
-# print(robot_one.health)
-
-# dino_one.dino_attack(1)
-
-# print(robot_one.health)
-
-# dino_one.dino_attack(1)
-# print(robot_one.health)

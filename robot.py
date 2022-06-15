@@ -11,8 +11,9 @@ class Robot:
         self.active_weapon = weapon.light_saber #hard coding in light saber
     
     def robo_attack(self): #robo attack dino
+        print(f'Dino\'s health is: {dinosaur.dino_one.health}')
         dinosaur.dino_one.health = dinosaur.dino_one.health - robot_one.active_weapon.attack_power
-        print(dinosaur.dino_one.health)
+        print(f'Dino\'s health is: {dinosaur.dino_one.health}')
 
     
 
@@ -23,9 +24,3 @@ class Robot:
 
 robot_one = Robot('dion')
 
-# print(dino_one.health)
-# robot_one.robo_attack(1)
-# print(dino_one.health)
-# print(dino_one.health)
-# robot_one.robo_attack(1)
-# print(dino_one.health)
