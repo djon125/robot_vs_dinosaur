@@ -1,4 +1,6 @@
-from robot import robot_one
+# from robot import robot_one
+import robot
+
 class Dinosaur:
     def __init__(self, name, attack_power):
         self.name = name
@@ -7,8 +9,12 @@ class Dinosaur:
 
 
     
-    def dino_attack(self, robot_hit):
-        self.robot_hit = robot_one.health -  dino_one.attack_power
+    def dino_attack(self): #dino attack robo
+        robot.robot_one.health = robot.robot_one.health -  dino_one.attack_power
+        print(robot.robot_one.health)
+
+        
+        
 
     # def dino_attack(self, hit_robot):
     #     self.hit_robot = True
