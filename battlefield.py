@@ -2,7 +2,7 @@
 #from dinosaur import dino_one
 import dinosaur
 import robot
-import weapon
+#import weapon #not accessed
 
 
 class Battlefield:
@@ -24,7 +24,7 @@ dinosaur.dino_one.dino_attack()
 dinosaur.dino_one.dino_attack()
 dinosaur.dino_one.dino_attack()
 dinosaur.dino_one.dino_attack()
-
+dinosaur.dino_one.dino_attack()
 
 
 

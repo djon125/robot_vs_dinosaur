@@ -5,7 +5,7 @@ import random
 class Dinosaur:
     def __init__(self, name, attack_power):
         self.name = name
-        self.attack_power = random.randint(1, 40) #attack_power if it doesn't work
+        self.attack_power = random.randint(1, 50) #attack_power if it doesn't work
         self.health = 100
 
 
@@ -14,6 +14,7 @@ class Dinosaur:
         if robot.robot_one.health > 0:
             print(f'Robot\'s health is: {robot.robot_one.health}')
             robot.robot_one.health = robot.robot_one.health -  dino_one.attack_power
+            dino_one.attack_power = random.randint(1, 50)
             print(f'Robot\'s health is: {robot.robot_one.health}')
         else:
             print('Uhoh, robo loses!')
