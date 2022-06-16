@@ -8,12 +8,13 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.active_weapon = weapon.light_saber #hard coding in light saber
+        self.active_weapon = weapon.w_one.attack_power #hard coding in light saber
     
     def robo_attack(self): #robo attack dino
         if dinosaur.dino_one.health > 0:
-            print(f'Dino\'s health is: {dinosaur.dino_one.health}')
-            dinosaur.dino_one.health = dinosaur.dino_one.health - robot_one.active_weapon.attack_power
+            #print(f'Dino\'s health is: {dinosaur.dino_one.health}')
+            dinosaur.dino_one.health = dinosaur.dino_one.health - robot_one.active_weapon
+            robot_one.active_weapon = weapon.w_one.attack_power
             print(f'Dino\'s health is: {dinosaur.dino_one.health}')
         else:
             print('Uhoh, dino loses!')

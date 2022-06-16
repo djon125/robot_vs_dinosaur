@@ -13,4 +13,4 @@ light_saber = Weapon('light saber', 40)
 Weapons = [gun, sword, light_saber]
 print(type(Weapons))
 w_one = random.choice(Weapons)
-print(w_one)
+print(w_one.name)

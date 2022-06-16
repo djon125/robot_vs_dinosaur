@@ -12,7 +12,7 @@ class Dinosaur:
     
     def dino_attack(self): #dino attack robo
         if robot.robot_one.health > 0:
-            print(f'Robot\'s health is: {robot.robot_one.health}')
+            #print(f'Robot\'s health is: {robot.robot_one.health}')
             robot.robot_one.health = robot.robot_one.health -  dino_one.attack_power
             dino_one.attack_power = random.randint(1, 50)
             print(f'Robot\'s health is: {robot.robot_one.health}')
@@ -22,3 +22,6 @@ class Dinosaur:
 
         
 dino_one = Dinosaur('dino_one', 40)   
+
+
+#instantiate classes in battlefield class!!!!!!
