@@ -9,5 +9,7 @@ class Dinosaur:
 
 
     
-    def dino_attack(self, robot): #dino attack robo
+    def attack(self, robot): #dino attack robo- passing in robot
         robot.health -= self.attack_power
+        self.attack_power = random.randint(1, 50)
+        print(f'Robot new health is: {robot.health}')
