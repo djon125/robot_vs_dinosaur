@@ -1,22 +1,21 @@
-#from robot import robot_one
-#from dinosaur import dino_one
-import dinosaur
-import robot
-#import weapon #not accessed
 
+from robot import Robot
+from dinosaur import Dinosaur
 
+robot_one = Robot('robo_one')
+dino_one =Dinosaur('dino_one')
 class Battlefield:
     def __init__(self):
         print('this is cool')
     def run_game(self):
         print('leggo')
-        while (dinosaur.dino_one.health > 0) and (robot.robot_one.health > 0):
-            dinosaur.dino_one.dino_attack()
-            robot.robot_one.robo_attack()
-            if (dinosaur.dino_one.health > robot.robot_one.health < 0):
-                print(f'Dinosaur: {dinosaur.dino_one.name} wins!')
-            elif (dinosaur.dino_one.health < robot.robot_one.health < 0):
-                print(f'Robot: {robot.robot_one.name} wins! ')
+        while (dino_one.health > 0) and (robot_one.health > 0):
+            dino_one.dino_attack()
+            robot_one.robo_attack()
+            if (dino_one.health > robot_one.health < 0):
+                print(f'Dinosaur: {dino_one.name} wins!')
+            elif (dino_one.health < robot_one.health < 0):
+                print(f'Robot: {robot_one.name} wins! ')
                   
 
            # if (dinosaur.dino_one.health < 0) or (robot.robot_one.health < 0):

@@ -1,26 +1,17 @@
 
-# from dinosaur import dino_one
-# from weapon import light_saber
-import dinosaur
-import weapon
+from weapon import w_one
 
 class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.active_weapon = weapon.w_one.attack_power #hard coding in light saber
+        self.active_weapon = w_one.attack_power #random choice weapon
     
-    def robo_attack(self): #robo attack dino
-        if dinosaur.dino_one.health > 0:
-            #print(f'Dino\'s health is: {dinosaur.dino_one.health}')
-            dinosaur.dino_one.health = dinosaur.dino_one.health - robot_one.active_weapon
-            robot_one.active_weapon = weapon.w_one.attack_power
-            print(f'Dino\'s health is: {dinosaur.dino_one.health}')
-        else:
-            print('Uhoh, dino loses!')
+    def attack(self, dinosaur): #robo attack dino
+        dinosaur.health -= self.active_weapon
 
     
 
 
-robot_one = Robot('dion')
+
 
