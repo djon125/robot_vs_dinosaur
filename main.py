@@ -1,4 +1,3 @@
-#from weapon import gun
 from battlefield import Battlefield
 
 game = Battlefield
