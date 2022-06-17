@@ -15,4 +15,3 @@ crossbow = Weapon('arrow', random.randint(1, 15))
 
 Weapons = [gun, sword, light_saber, bomb, gas, crossbow]
 w_one = random.choice(Weapons)
-print(w_one.name)
