@@ -1,6 +1,5 @@
 
 from weapon import w_one
-
 class Robot:
     def __init__(self, name):
         self.name = name
