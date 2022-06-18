@@ -1,7 +1,7 @@
 from battlefield import Battlefield
 
-game = Battlefield
-game.run_game(game)
+battle_roayle = Battlefield
+battle_roayle.run_game(battle_roayle)
 
 
 

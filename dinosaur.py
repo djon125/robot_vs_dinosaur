@@ -12,4 +12,4 @@ class Dinosaur:
     def attack(self, robot): #dino attack robo- passing robot into method
         robot.health -= self.attack_power
         self.attack_power = random.randint(1, 50)
-        print(f'{self.name} attacked {robot.name}! {robot.name}\'s new health is: {robot.health}')
+        print(f'{self.name} attacked {robot.name} with his claws! {robot.name}\'s new health is: {robot.health}')

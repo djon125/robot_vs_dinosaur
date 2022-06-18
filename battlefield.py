@@ -8,7 +8,7 @@ robo_one = Robot('C3P0')
 class Battlefield:
     def __init__(self): 
         print()
-        print(f'Welcome! Today we have {dino_one.name} battling {robo_one.name}! Who will win? Let\'s find out:') 
+        print(f'Welcome to the arena! Today we have {dino_one.name} battling {robo_one.name}! Who will win? Let\'s find out:') 
     
    
     def display_welcome(self):
@@ -50,19 +50,3 @@ class Battlefield:
 
 
 
-
-    
-    # def display_welcome(self):
-    #     print('Welcome to the game! Who will go first?')
-    # def battle_phase(self):
-    #     print('Let the battle begin')
-
-    #     dinosaur.dino_one.dino_attack()
-    #     robot.robot_one.robo_attack()
-    # def display_winner(self):
-    #     pass
-
-
-#going to go in battle phase?
-
-    
