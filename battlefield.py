@@ -3,47 +3,47 @@ from robot import Robot
 from dinosaur import Dinosaur
 from weapon import w_one # added weapon nanme to display_welcome
 
-dino_one = Dinosaur('Milo')
-robo_one = Robot('C3P0')
 class Battlefield:
-    def __init__(self): 
+    def __init__(self):
+        self.dino_one = Dinosaur('Milo')
+        self.robo_one = Robot('C3P0')
         print()
-        print(f'Welcome to the arena! Today we have {dino_one.name} battling {robo_one.name}! Who will win? Let\'s find out:') 
+        print(f'Welcome to the arena! Today we have {self.dino_one.name} battling {self.robo_one.name}! Who will win? Let\'s find out:') 
     
    
     def display_welcome(self):
-        print(f'{robo_one.name}\'s weapon will be: {w_one.name} ')
+        print(f'{self.robo_one.name}\'s weapon will be: {w_one.name} ')
     
     
     def battle_phase(self):
-        while (dino_one.health > 0) and (robo_one.health > 0):
-            dino_one.attack(robo_one)
-            if (robo_one.health <= 0) and (dino_one.health > robo_one.health):
-                print(f'{dino_one.name} defeated {robo_one.name}!')
-                print(f'{dino_one.name} wins!')
+        while (self.dino_one.health > 0) and (self.robo_one.health > 0):
+            self.dino_one.attack(self.robo_one)
+            if (self.robo_one.health <= 0) and (self.dino_one.health > self.robo_one.health):
+                print(f'{self.dino_one.name} defeated {self.robo_one.name}!')
+                print(f'{self.dino_one.name} wins!')
                 break
-            elif (dino_one.health <= 0) and (robo_one.health > dino_one.health):
-                print(f'{robo_one.name} defeated {dino_one.name}! ')
-                print(f'{robo_one.name} wins!')
+            elif (self.dino_one.health <= 0) and (self.robo_one.health > self.dino_one.health):
+                print(f'{self.robo_one.name} defeated {self.dino_one.name}! ')
+                print(f'{self.robo_one.name} wins!')
                 break
-            robo_one.attack(dino_one)
-            if (robo_one.health <= 0) and (dino_one.health > robo_one.health):
-                print(f'{dino_one.name} defeated{robo_one.name}!')
-                print(f'{dino_one.name} wins!')
+            self.robo_one.attack(self.dino_one)
+            if (self.robo_one.health <= 0) and (self.dino_one.health > self.robo_one.health):
+                print(f'{self.dino_one.name} defeated{self.robo_one.name}!')
+                print(f'{self.dino_one.name} wins!')
                 break
-            elif (dino_one.health <= 0) and (robo_one.health > dino_one.health):
-                print(f'{robo_one.name} defeated {dino_one.name}! ')
-                print(f'{robo_one.name} wins!')
+            elif (self.dino_one.health <= 0) and (self.robo_one.health > self.dino_one.health):
+                print(f'{self.robo_one.name} defeated {self.dino_one.name}! ')
+                print(f'{self.robo_one.name} wins!')
                 break
    
    
     def end_message(self):
         print('Thanks for watching! See you next time!')
     def run_game(self):
-        self.__init__(1)
-        self.display_welcome(1)
-        self.battle_phase(1)
-        self.end_message(1)
+        self.__init__()
+        self.display_welcome()
+        self.battle_phase()
+        self.end_message()
 
                   
 
